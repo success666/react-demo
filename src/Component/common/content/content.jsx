@@ -1,5 +1,5 @@
 import React from 'react';
-import './content.scss';
+import './content.css';
 import { Button } from 'antd';
 
 

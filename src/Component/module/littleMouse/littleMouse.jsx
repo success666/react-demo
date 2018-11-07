@@ -1,8 +1,8 @@
 import React from 'react';
 import { Breadcrumb } from 'antd';
-import './header.css'
+import './littleMouse.css'
 
-class Head extends React.Component{
+class LittleMouse extends React.Component{
     static defaultProps = {
         name: 'Tom',
         age: 20
@@ -23,4 +23,4 @@ class Head extends React.Component{
 
 
 
-export default Head;
+export default LittleMouse;

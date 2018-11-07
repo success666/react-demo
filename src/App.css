@@ -1,0 +1,20 @@
+.App {
+    height: 100%;
+}
+.layout{
+height: 100%;
+}
+.header{
+    background:skyblue!important;
+    height: 80px;
+}
+.sider{
+    background:#fff!important;
+    width: 200px;
+    height: 100%;
+}
+.content{
+    background:#ccc;
+    height: 100%;
+}
+
