@@ -3,13 +3,10 @@ import { Breadcrumb } from 'antd';
 import './littleMouse.css'
 
 class LittleMouse extends React.Component{
-    static defaultProps = {
-        name: 'Tom',
-        age: 20
-    }
+   
     render(){
         return (
-            <div className="head">
+            <div>
                 <Breadcrumb>
                     <Breadcrumb.Item>Home</Breadcrumb.Item>
                     <Breadcrumb.Item>Application Center</Breadcrumb.Item>

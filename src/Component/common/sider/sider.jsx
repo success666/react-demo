@@ -45,7 +45,7 @@ class Side extends React.Component{
                             <Link to={"/littleMouse"}>littleMouse</Link>
                         </Menu.Item>
                         <Menu.Item key="3">
-                            <Link to={"/"}>///</Link>
+                            <Link to={"/"}>toPagehome</Link>
                         </Menu.Item>
                         <Menu.Item key="4">
                             <Link to={"/littleMouse"}>littleMouse</Link>
@@ -54,7 +54,7 @@ class Side extends React.Component{
 
                     <SubMenu key="sub2" title={<span><Icon type="appstore" /><span>Navigation Two</span></span>}>
                         <Menu.Item key="5">
-                            <Link to={"/"}>///</Link>
+                            <Link to={"/"}>toPagehome</Link>
                         </Menu.Item>
                         <Menu.Item key="6">
                             <Link to={"/littleMouse"}>littleMouse</Link>

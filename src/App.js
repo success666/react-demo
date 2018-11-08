@@ -19,32 +19,29 @@ class App extends Component {
   render() {
     return (
         <div className="App">
-        <Router history={history}>
-                            <Switch>
-            <Layout className="layout">
-                <Sider className="sider">
-                    <Side></Side>
-                </Sider>
-                <Layout>
-                    <Header className="header">
-                        <Head></Head>
-                    </Header>
+            <Router history={history}>
+                <Layout className="layout">
+                
+                    <Sider className="sider">
+                        <Side></Side>
+                    </Sider>
 
-                    <Content className="content">
+                    <Layout>
 
-                        
-                                <Route exact path="/home" component={Mian}/>
-                                <Route exact path="/littleMouse" component={LittleMouse}/>
-                            
-                           
+                        <Header className="header">
+                            <Head></Head>
+                        </Header>
 
+                        <Content className="content">
+                                <Switch>
+                                    <Route path="/home" component={Mian}/>
+                                    <Route path="/littleMouse" component={LittleMouse}/>
+                                </Switch>
+                        </Content>
 
-
-                    </Content>
+                    </Layout>
                 </Layout>
-            </Layout>
-            </Switch>
-                        </Router>
+            </Router>
         </div>
     );
   }
