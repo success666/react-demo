@@ -2,7 +2,9 @@ import React from 'react';
 import './tabel.css';
 import { Table, Tag } from 'antd';
 
-const { Column, ColumnGroup } = Table;
+import AntdCarousel from './children/children.jsx';
+
+const { Column } = Table;
 
 
 class TableData extends React.Component{
@@ -32,25 +34,32 @@ class TableData extends React.Component{
         }]
     }
 
+    state = {
+        text : ''
+    }
+    change = event=>{
+        this.setState({text: event.target.value});
+        //调用子组件的方法
+        this.refs.children.changeChildren1(event.target.value);
+    }
+
     render(){
         return (
             <div>
                 <Table dataSource={this.props.data}>
-                    <ColumnGroup>
 
-                        <Column
-                            title="First Name"
-                            dataIndex="firstName"
-                            key="firstName"
-                        />
+                    <Column
+                        title="First Name"
+                        dataIndex="firstName"
+                        key="firstName"
+                    />
 
-                        <Column
-                            title="Last Name"
-                            dataIndex="lastName"
-                            key="lastName"
-                        />
+                    <Column
+                        title="Last Name"
+                        dataIndex="lastName"
+                        key="lastName"
+                    />
 
-                    </ColumnGroup>
 
                     <Column
                     title="Age"
@@ -75,8 +84,12 @@ class TableData extends React.Component{
                     )}
                     />
 
-                  
                 </Table>
+                <hr/>
+                <p><label>父组件</label><input type="text" onChange={this.change}/></p>
+                <hr/>
+
+                <AntdCarousel ref="children" text={this.state.text}></AntdCarousel>
             </div>
     ) 
 }
