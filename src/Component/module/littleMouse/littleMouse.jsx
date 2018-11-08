@@ -3,7 +3,14 @@ import { Breadcrumb } from 'antd';
 import './littleMouse.css'
 
 class LittleMouse extends React.Component{
-   
+    constructor(props){
+        super(props)
+        this.state = {
+        type:'12345',
+        age: 20,
+        text: 'Hello React'
+        }
+    }
     render(){
         return (
             <div>

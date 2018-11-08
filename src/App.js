@@ -6,8 +6,12 @@ import './App.css';
 
 import Head from './Component/common/header/header.jsx';
 import Side from './Component/common/sider/sider.jsx';
+
+
 import Mian from './Component/common/content/content.jsx';
 import LittleMouse from './Component/module/littleMouse/littleMouse.jsx'
+import Page from './Component/common/page/page.jsx';
+import TableData from './Component/module/tabel/tabel.jsx'
 
 
 import { Layout } from 'antd';
@@ -36,6 +40,8 @@ class App extends Component {
                                 <Switch>
                                     <Route path="/home" component={Mian}/>
                                     <Route path="/littleMouse" component={LittleMouse}/>
+                                    <Route path="/page" component={Page}/>
+                                    <Route path="/tabel" component={TableData}/>
                                 </Switch>
                         </Content>
 

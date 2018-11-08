@@ -3,6 +3,14 @@ import { Breadcrumb } from 'antd';
 import './header.css'
 
 class Head extends React.Component{
+    constructor(props){
+        super(props)
+        this.state = {
+        type:'12345',
+        age: 20,
+        text: 'Hello React'
+        }
+    }
     static defaultProps = {
         name: 'Tom',
         age: 20
